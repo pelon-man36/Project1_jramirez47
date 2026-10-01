@@ -28,6 +28,27 @@ class MyApp(ShowBase):
         tex3 = self.loader.loadTexture("./Assets/Planets/Planet3.png")
         self.Planet3.setTexture(tex3, 1)
 
+        self.Planet4 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
+        self.Planet4.reparentTo(self.render)
+        self.Planet4.setScale(100)
+        self.Planet4.setPos(200, 1000, 90)
+        tex4 = self.loader.loadTexture("./Assets/Planets/Planet4.png")
+        self.Planet4.setTexture(tex4, 1)
+
+        self.Planet5 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
+        self.Planet5.reparentTo(self.render)
+        self.Planet5.setScale(100)
+        self.Planet5.setPos(-150, 1000, 30)
+        tex5 = self.loader.loadTexture("./Assets/Planets/Planet5.png")
+        self.Planet5.setTexture(tex5, 1)
+
+        self.Planet6 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
+        self.Planet6.reparentTo(self.render)
+        self.Planet6.setScale(100)
+        self.Planet6.setPos(200, 6000, 0)
+        tex6 = self.loader.loadTexture("./Assets/Planets/Planet6.png")
+        self.Planet6.setTexture(tex6, 1)
+
         # Add a couple of more planets (6 in total); Load and set textures to everything.
 
 
