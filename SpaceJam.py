@@ -3,6 +3,7 @@ from direct.showbase.ShowBase import ShowBase
 class MyApp(ShowBase):
     def __init__(self):
         ShowBase.__init__(self)
+
         self.Universe = self.loader.loadModel("./Assets/Universe/Universe.x")
         self.Universe.reparentTo(self.render)
         self.Universe.setScale(15000)
@@ -51,7 +52,10 @@ class MyApp(ShowBase):
         tex6 = self.loader.loadTexture("./Assets/Planets/Planet6.png")
         self.Planet6.setTexture(tex6, 1)
 
-        # Add a couple of more planets (6 in total); Load and set textures to everything.
+        self.Station = self.loader.loadModel("./Assets/Space_Station/SpaceStation1B/spaceStation.egg")
+        self.Station.reparentTo(self.render)
+        self.Station.setScale(50)
+        self.Station.setPos(5000, 400, 70)
 
 
 
