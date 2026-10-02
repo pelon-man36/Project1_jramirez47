@@ -21,14 +21,14 @@ class MyApp(ShowBase):
         self.Planet1 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet1.reparentTo(self.render)
         self.Planet1.setScale(100)
-        self.Planet1.setPos(-1500, 5000, 670)
+        self.Planet1.setPos(-1500, 5000, 350)
         tex1 = self.loader.loadTexture("./Assets/Planets/Planet1.jpg")
         self.Planet1.setTexture(tex1, 1)
 
         self.Planet2 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet2.reparentTo(self.render)
         self.Planet2.setScale(100)
-        self.Planet2.setPos(4000, 3000, 800)
+        self.Planet2.setPos(4000, 3000, 400)
         tex2 = self.loader.loadTexture("./Assets/Planets/Planet2.png")
         self.Planet2.setTexture(tex2, 1)
 
@@ -42,7 +42,7 @@ class MyApp(ShowBase):
         self.Planet4 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet4.reparentTo(self.render)
         self.Planet4.setScale(100)
-        self.Planet4.setPos(-2000, 1000, 900)
+        self.Planet4.setPos(-2000, 1000, 450)
         tex4 = self.loader.loadTexture("./Assets/Planets/Planet4.png")
         self.Planet4.setTexture(tex4, 1)
 
@@ -55,7 +55,7 @@ class MyApp(ShowBase):
 
         self.Planet6 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet6.reparentTo(self.render)
-        self.Planet6.setScale(100)
+        self.Planet6.setScale(150)
         self.Planet6.setPos(2000, 6000, 0)
         tex6 = self.loader.loadTexture("./Assets/Planets/Planet6.png")
         self.Planet6.setTexture(tex6, 1)
