@@ -6,10 +6,10 @@ class MyApp(ShowBase):
 
         self.ship = self.loader.loadModel("./Assets/Spaceships/ship.obj")
         self.ship.reparentTo(self.render)
-        self.ship.setScale(10)
+        self.ship.setScale(5)
         tex_ship = self.loader.loadTexture("./Assets/Spaceships/ship_TEX.tga")
         self.ship.setTexture(tex_ship, 1)
-        self.ship.setPos(0, 300, 0)
+        self.ship.setPos(0, 200, 0)
         self.ship.setHpr(180, 90, 0)
 
         self.Universe = self.loader.loadModel("./Assets/Universe/Universe.x")
