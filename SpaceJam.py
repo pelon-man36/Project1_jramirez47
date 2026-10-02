@@ -4,6 +4,14 @@ class MyApp(ShowBase):
     def __init__(self):
         ShowBase.__init__(self)
 
+        self.ship = self.loader.loadModel("./Assets/Spaceships/ship.obj")
+        self.ship.reparentTo(self.render)
+        self.ship.setScale(10)
+        tex_ship = self.loader.loadTexture("./Assets/Spaceships/ship_TEX.tga")
+        self.ship.setTexture(tex_ship, 1)
+        self.ship.setPos(0, 300, 0)
+        self.ship.setHpr(180, 90, 0)
+
         self.Universe = self.loader.loadModel("./Assets/Universe/Universe.x")
         self.Universe.reparentTo(self.render)
         self.Universe.setScale(15000)
@@ -20,42 +28,42 @@ class MyApp(ShowBase):
         self.Planet2 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet2.reparentTo(self.render)
         self.Planet2.setScale(100)
-        self.Planet2.setPos(0, 3000, 80)
+        self.Planet2.setPos(4000, 3000, 80)
         tex2 = self.loader.loadTexture("./Assets/Planets/Planet2.png")
         self.Planet2.setTexture(tex2, 1)
 
         self.Planet3 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet3.reparentTo(self.render)
         self.Planet3.setScale(100)
-        self.Planet3.setPos(-150, 2000, 40)
+        self.Planet3.setPos(-1500, 2000, 40)
         tex3 = self.loader.loadTexture("./Assets/Planets/Planet3.png")
         self.Planet3.setTexture(tex3, 1)
 
         self.Planet4 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet4.reparentTo(self.render)
         self.Planet4.setScale(100)
-        self.Planet4.setPos(200, 1000, 90)
+        self.Planet4.setPos(2000, 1000, 90)
         tex4 = self.loader.loadTexture("./Assets/Planets/Planet4.png")
         self.Planet4.setTexture(tex4, 1)
 
         self.Planet5 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet5.reparentTo(self.render)
         self.Planet5.setScale(100)
-        self.Planet5.setPos(-150, 1000, 30)
+        self.Planet5.setPos(-1500, 1000, 30)
         tex5 = self.loader.loadTexture("./Assets/Planets/Planet5.png")
         self.Planet5.setTexture(tex5, 1)
 
         self.Planet6 = self.loader.loadModel("./Assets/Planets/protoPlanet.x")
         self.Planet6.reparentTo(self.render)
         self.Planet6.setScale(100)
-        self.Planet6.setPos(200, 6000, 0)
+        self.Planet6.setPos(2000, 6000, 0)
         tex6 = self.loader.loadTexture("./Assets/Planets/Planet6.png")
         self.Planet6.setTexture(tex6, 1)
 
         self.Station = self.loader.loadModel("./Assets/Space_Station/SpaceStation1B/spaceStation.egg")
         self.Station.reparentTo(self.render)
         self.Station.setScale(50)
-        self.Station.setPos(5000, 400, 70)
+        self.Station.setPos(5000, 4000, 70)
 
 
 
